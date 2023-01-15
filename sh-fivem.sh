@@ -51,7 +51,7 @@ printf "${CYAN} Démarrage de l'instalaltion de version de 5104 pour serveur Fiv
     cd /home/
     mkdir -p fivem
     cd /home/fivem
-    wget  https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/5848-4f71128ee48b07026d6d7229a60ebc5f40f2b9db/fx.tar.xz
+    wget  https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/6198-a18bc4b91117dd12e3f54b33807cd7fd04fab784/fx.tar.xz
     tar xvfJ fx.tar.xz
     # Suppression du cache automatique
     # sed -i '1irm -r cache' run.sh
@@ -80,7 +80,7 @@ if [[ "$reponse" == "o" ]]
 then 
 printf "${CYAN} Démarrage technologie pour démarrer votre serveur TXADMIN !"
     cd /etc/systemd/system
-    wget https://raw.githubusercontent.com/Clashplayer-PROTECT/sh-fivem/master/txadmin.service
+    wget https://raw.githubusercontent.com/ThiboRdj/sh-fivem-last/master/txadmin.service
     systemctl enable txadmin.service
 fi
 sleep 2
